@@ -1,0 +1,7 @@
+[requires]
+catch2/[>=2.11]
+gtest/[>=1.10]
+spdlog/[>=1.5]
+
+[generators]
+pkg_config

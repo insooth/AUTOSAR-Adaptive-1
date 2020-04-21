@@ -15,7 +15,7 @@ In `tools/dev_env` use:
 `docker build -t autosar-adaptive-dev .`
 
 ### Run container
-`docker run -d -t --name <container_name> -v <path_to_repo:/home/dev/workspace> autosar-adaptive-dev`
+`docker run -d -t --name <container_name> -v <repository_path>:<workspace_path> autosar-adaptive-dev`
 
 i.e
 

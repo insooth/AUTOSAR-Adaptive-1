@@ -20,3 +20,5 @@ meson ..
 # Build project
 ninja
 ```
+
+If not working, ensure that Conan is set to use gcc10 in `.conan/settings.yml`

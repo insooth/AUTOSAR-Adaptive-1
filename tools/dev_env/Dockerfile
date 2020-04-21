@@ -4,8 +4,8 @@ FROM ubuntu:focal
 LABEL maintainer="Bartosz Burda <Bartosz.Burda@umlaut.com>"
 
 # Set the env variables
-ENV CXX=/usr/bin/g++ \
-    CC=/usr/bin/gcc \
+ENV CXX=/usr/bin/g++-10 \
+    CC=/usr/bin/gcc-10 \
 # This should be changed to your Timezone
     TZ=Europe/Warsaw
 
@@ -16,21 +16,24 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN dpkg --add-architecture i386
 
 # Install dependencies using apt
-RUN apt -qq update \
-    && apt -qq install -y \
+RUN DEBIAN_FRONTEND=noninteractive apt -qq update && \
+       apt -qq install -y \
        sudo \
        wget \
        git \
 	   curl \
 	   gcc-10 \ 
 	   g++-10 \
+       cmake \
+	   ninja-build \
+       pkg-config \
        gdb \
+	   clang-format \
 	   python3 \
 	   python3-pip \
        python3-setuptools \
-       python3-wheel \
-       ninja-build
-
+       python3-wheel
+       
 # Install Python packages: Meson and Conan
 RUN pip3 install meson conan
 

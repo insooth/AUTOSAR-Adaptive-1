@@ -7,6 +7,10 @@ message('Running Conan dependency installation...')
 # Workaround for Meson not substituting $MESON_BUILD_ROOT and $MESON_SOURCE_ROOT in direct call of conan.
 env = find_program('env')
 conan_out = run_command(env, 'sh', '-c',
-	'conan install --build=missing -if $MESON_BUILD_ROOT $MESON_SOURCE_ROOT/conan', check: true)
+	'conan install --build=missing -if $MESON_BUILD_ROOT $MESON_SOURCE_ROOT/conan')
 
-message(conan_out.stdout())
+if conan_out.returncode() != 0
+	error(conan_out.stderr())
+else
+	message(conan_out.stdout())
+endif

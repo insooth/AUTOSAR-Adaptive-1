@@ -19,6 +19,9 @@ meson ..
 
 # Build project
 ninja
+
+# Run static analysis (requires clang-tidy to be installed)
+ninja clang-tidy
 ```
 
 If not working, ensure that Conan is set to use gcc10 in `.conan/settings.yml`

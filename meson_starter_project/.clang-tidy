@@ -1,7 +1,0 @@
----
-Checks:          '*,-llvm-*,-fuchsia-*,-hicpp-*,-google-runtime-references,-readability-*,-cppcoreguidelines-non-private-member-variables-in-classes'
-WarningsAsErrors: false
-AnalyzeTemporaryDtors: false
-FormatStyle:     none
-...
-

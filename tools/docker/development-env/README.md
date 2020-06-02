@@ -19,7 +19,10 @@ In `tools/dev_env` use:
 
 i.e
 
-`docker run -d -t --name autosar-adaptive-dev -v C:\AUTOSAR-Adaptive:/home/dev/workspace autosar-adaptive-dev`
+`docker run -d -t --name autosar-adaptive-dev-container -v C:\AUTOSAR-Adaptive:/home/dev/workspace autosar-adaptive-dev`
+
+### Connect to Container bash console
+`docker exec -it autosar-adaptive-dev-container /bin/bash`
 
 ### Credentials 
 `dev:dev`

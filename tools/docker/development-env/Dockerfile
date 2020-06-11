@@ -34,8 +34,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt -qq update && \
        python3-setuptools \
        python3-wheel
        
-# Install Python packages: Meson and Conan
-RUN pip3 install meson conan
+# Install Python packages: Meson, Conan and gcovr
+RUN pip3 install meson conan gcovr
 
 # Create user for development
 RUN useradd -m dev --uid=1000 && echo "dev:dev" | chpasswd

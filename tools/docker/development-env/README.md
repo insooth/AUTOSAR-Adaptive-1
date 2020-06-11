@@ -30,3 +30,20 @@ i.e
 ### Usage with VS Code
 
 https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
+
+### Building library
+
+Go to any library root folder (which are submodules)
+i.e.: cd /home/dev/workspace/libs/core
+
+and then:
+
+mkdir build && cd build
+meson setup -Db_coverage=true --pkg-config-path .
+ninja
+
+### Coverage
+
+Run tests and coverage:
+ninja test
+ninja coverage-html

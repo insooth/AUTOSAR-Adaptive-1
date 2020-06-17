@@ -32,7 +32,9 @@ RUN DEBIAN_FRONTEND=noninteractive apt -qq update && \
 	   python3 \
 	   python3-pip \
        python3-setuptools \
-       python3-wheel
+       python3-wheel \
+       doxygen \
+       graphviz
        
 # Install Python packages: Meson, Conan and gcovr
 RUN pip3 install meson conan gcovr

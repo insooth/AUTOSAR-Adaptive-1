@@ -21,16 +21,17 @@ RUN DEBIAN_FRONTEND=noninteractive apt -qq update && \
        sudo \
        wget \
        git \
-	   curl \
-	   gcc-10 \ 
-	   g++-10 \
+       curl \
+       gcc-10 \
+       g++-10 \
        cmake \
-	   ninja-build \
+       ninja-build \
        pkg-config \
        gdb \
-	   clang-format \
-	   python3 \
-	   python3-pip \
+       clang-format \
+       clang \
+       python3 \
+       python3-pip \
        python3-setuptools \
        python3-wheel \
        doxygen \

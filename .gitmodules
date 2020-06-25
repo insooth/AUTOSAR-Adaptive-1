@@ -1,56 +1,56 @@
 [submodule "CommunicationManagement"]
 	path = libs/com
-	url = git@github.com:UmlautSoftwareDevelopmentAccount/AP-CommunicationManagement.git
+	url = https://github.com/UmlautSoftwareDevelopmentAccount/AP-CommunicationManagement.git
 	branch = master
 [submodule "CoreTypes"]
 	path = libs/core
-	url = git@github.com:UmlautSoftwareDevelopmentAccount/AP-CoreTypes.git
+	url = https://github.com/UmlautSoftwareDevelopmentAccount/AP-CoreTypes.git
 	branch = master
 [submodule "Cryptography"]
 	path = libs/crypto
-	url = git@github.com:UmlautSoftwareDevelopmentAccount/AP-Cryptography.git
+	url = https://github.com/UmlautSoftwareDevelopmentAccount/AP-Cryptography.git
 	branch = master
 [submodule "Diagnostics"]
 	path = libs/diag
-	url = git@github.com:UmlautSoftwareDevelopmentAccount/AP-Diagnostics.git
+	url = https://github.com/UmlautSoftwareDevelopmentAccount/AP-Diagnostics.git
 	branch = master
 [submodule "ExecutionManagement"]
 	path = libs/exec
-	url = git@github.com:UmlautSoftwareDevelopmentAccount/AP-ExecutionManagement.git
+	url = https://github.com/UmlautSoftwareDevelopmentAccount/AP-ExecutionManagement.git
 	branch = master
 [submodule "IdentityAndAccessManagement"]
 	path = libs/iam
-	url = git@github.com:UmlautSoftwareDevelopmentAccount/AP-IdentityAndAccessManagement.git
+	url = https://github.com/UmlautSoftwareDevelopmentAccount/AP-IdentityAndAccessManagement.git
 	branch = master
 [submodule "LogAndTrace"]
 	path = libs/log
-	url = git@github.com:UmlautSoftwareDevelopmentAccount/AP-LogAndTrace.git
+	url = https://github.com/UmlautSoftwareDevelopmentAccount/AP-LogAndTrace.git
 	branch = master
 [submodule "NetworkManagement"]
 	path = libs/nm
-	url = git@github.com:UmlautSoftwareDevelopmentAccount/AP-NetworkManagement.git
+	url = https://github.com/UmlautSoftwareDevelopmentAccount/AP-NetworkManagement.git
 	branch = master
 [submodule "Persistency"]
 	path = libs/per
-	url = git@github.com:UmlautSoftwareDevelopmentAccount/AP-Persistency.git
+	url = https://github.com/UmlautSoftwareDevelopmentAccount/AP-Persistency.git
 	branch = master
 [submodule "PlatformHealthManagement"]
 	path = libs/phm
-	url = git@github.com:UmlautSoftwareDevelopmentAccount/AP-PlatformHealthManagement.git
+	url = https://github.com/UmlautSoftwareDevelopmentAccount/AP-PlatformHealthManagement.git
 	branch = master
 [submodule "REST"]
 	path = libs/rest
-	url = git@github.com:UmlautSoftwareDevelopmentAccount/AP-REST.git
+	url = https://github.com/UmlautSoftwareDevelopmentAccount/AP-REST.git
 	branch = master
 [submodule "StateManagement"]
 	path = libs/sm
-	url = git@github.com:UmlautSoftwareDevelopmentAccount/AP-StateManagement.git
+	url = https://github.com/UmlautSoftwareDevelopmentAccount/AP-StateManagement.git
 	branch = master
 [submodule "TimeSynchronization"]
 	path = libs/tsync
-	url = git@github.com:UmlautSoftwareDevelopmentAccount/AP-TimeSynchronization.git
+	url = https://github.com/UmlautSoftwareDevelopmentAccount/AP-TimeSynchronization.git
 	branch = master
 [submodule "UpdateAndConfigManagement"]
 	path = libs/ucm
-	url = git@github.com:UmlautSoftwareDevelopmentAccount/AP-UpdateAndConfigManagement.git
+	url = https://github.com/UmlautSoftwareDevelopmentAccount/AP-UpdateAndConfigManagement.git
 	branch = master

@@ -37,7 +37,30 @@ RUN DEBIAN_FRONTEND=noninteractive apt -qq update && \
        doxygen \
        graphviz \
        clang-tidy
-       
+# Yocto pkgs
+RUN apt -qq install -y \
+       gawk \
+       git-core \
+       diffstat \
+       unzip \
+       texinfo \
+       gcc-multilib \
+       build-essential \
+       chrpath \
+       socat \
+       cpio \
+       python3-pexpect \
+       xz-utils \
+       debianutils \
+       iputils-ping \
+       python3-git \
+       python3-jinja2 \
+       libegl1-mesa \
+       libsdl1.2-dev \
+       pylint3 \
+       xterm \
+       locales
+
 # Install Python packages: Meson, Conan and gcovr
 RUN pip3 install meson conan gcovr
 
@@ -49,6 +72,16 @@ RUN chsh -s /bin/bash dev
 
 # Add user to sudo group
 RUN sudo usermod -aG sudo dev
+
+#set Locale, Yocto need UTF-8
+RUN sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && \
+        echo 'LANG="en_US.UTF-8"'>/etc/default/locale && \
+        dpkg-reconfigure --frontend=noninteractive locales && \
+        update-locale LANG=en_US.UTF-8
+
+ENV LC_ALL en_US.UTF-8
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US.UTF-8
 
 # Set user and work directory
 USER dev

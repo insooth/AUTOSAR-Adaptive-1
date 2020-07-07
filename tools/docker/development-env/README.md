@@ -7,6 +7,7 @@ The Dockerfile contains configuration of the container with development environm
 - Conan
 - Meson
 - Git
+- Packages for Yocto build host
 
 ### Build image
 

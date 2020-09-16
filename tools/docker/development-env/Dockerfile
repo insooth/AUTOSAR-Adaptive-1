@@ -36,7 +36,11 @@ RUN DEBIAN_FRONTEND=noninteractive apt -qq update && \
        python3-wheel \
        doxygen \
        graphviz \
-       clang-tidy
+       clang-tidy \
+       flex \
+       bison \
+       vim
+
 # Yocto pkgs
 RUN apt -qq install -y \
        gawk \

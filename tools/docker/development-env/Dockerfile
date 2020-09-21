@@ -37,10 +37,13 @@ RUN DEBIAN_FRONTEND=noninteractive apt -qq update && \
        doxygen \
        graphviz \
        clang-tidy \
+       vim
+
+# Doxygen dev pkgs
+RUN apt -qq install -y \
        flex \
        bison \
-       libxml2-utils \
-       vim
+       libxml2-utils
 
 # Yocto pkgs
 RUN apt -qq install -y \

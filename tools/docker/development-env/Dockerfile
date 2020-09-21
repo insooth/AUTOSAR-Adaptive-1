@@ -39,6 +39,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt -qq update && \
        clang-tidy \
        flex \
        bison \
+       libxml2-utils \
        vim
 
 # Yocto pkgs
